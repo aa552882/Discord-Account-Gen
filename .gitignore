@@ -40,6 +40,3 @@ Thumbs.db
 # idk #
 #######################
 __pycache__
-images/
-tokens/
-config.ini
