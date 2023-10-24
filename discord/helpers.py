@@ -25,8 +25,7 @@ config_data: Dict[str, Union[int, bool, List[str]]] = {
     "KOPECHKA_MAIL_TYPE": config_parser.get("KEYS", 'KOPECHKA_MAIL_TYPE'),
     "SOLVER": config_parser.get("KEYS", 'SOLVER').lower(),
     "COMPRESS_PFP_RATIO": config_parser.getfloat("SETTINGS", "COMPRESS_PFP_RATIO"),
-    "IMPLEX_SERVER": config_parser.get("KEYS", "IMPLEX_SERVER"),
-    "TRACKING": config_parser.get("SETTINGS", "TRACKING")
+    "IMPLEX_SERVER": config_parser.get("KEYS", "IMPLEX_SERVER") 
 }
 
 CONFIG: Final[Dict[str, Union[int, bool, float]]] = MappingProxyType(config_data)
